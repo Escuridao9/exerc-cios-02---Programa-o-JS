@@ -1,12 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <img src="../pratica-01/UPCA.svg" alt="logo da UPCA">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=Y87ky19DzqgoglLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</body>
+  </head>
+  <body>
+    <img src="../pratica-01/UPCA.svg" alt="UPCA logo" />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/jNQXAC9IVRw?si=Y87ky19DzqgoglLQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <form action="/send" method="get" class="form-example">
+      <div class="form-example">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required/>
+      </div>
+      <div class="form-example">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="form-example">
+        <label for="phone">Phone: </label>
+        <input type="number" name="phone" id="phone" pattern="[0-9]{9}" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </body>
 </html>
